@@ -1,0 +1,4 @@
+export const FX_RATES_REQUEST = 'FX_RATES_REQUEST';
+export const FX_RATES_SUCCESS = 'FX_RATES_SUCCESS';
+export const FX_RATES_FAILURE = 'FX_RATES_FAILURE';
+

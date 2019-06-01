@@ -1,33 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+
 .App {
-  text-align: center;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* global styles */
+.row {
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.col-md-6 {
+    width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+/* ==== */
+
+.exchange-component .title {
+    font-size: 32px;
+    position: absolute;
+    top: 2.25rem;
+    left: 50%;
+    z-index: 1000000;
+    transform: translateX(-50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*.exchange-component .row .right::before {*/
+/*content: '';*/
+/*position: absolute;*/
+/*width: 100%;*/
+/*height: 12.875rem;*/
+/*top: 0;*/
+/*left: 0;*/
+/*background-image: linear-gradient(to bottom, #fff 0%, #f7f7f7 100%);*/
+/*}*/
+
+.exchange-component .row .right {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    padding: 8.25rem 0px 0px;
+}
+
+.exchange-component .row .left {
+    background: #fff;
+    min-height: 100vh;
+    padding: 8.25rem 0px 0px;
+}
+
+.exchange-component .row .content {
+    padding: 0 8rem;
+}
+
+.number-input {
+    font-weight: 300;
+    font-size: 6rem;
+}
+
+.number-input input {
+    font-weight: 300;
+    font-size: 6rem;
+    border: none;
+    outline: none ! important;
+}
+
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
