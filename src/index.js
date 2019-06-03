@@ -22,10 +22,6 @@ const store = createStore(
     composeEnhancers(applyMiddleware(thunk))
 );
 
-// const store = createStore(
-//     reducer,
-//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-// );
 
 ReactDOM.render(
     <Provider store={store}>
